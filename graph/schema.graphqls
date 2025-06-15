@@ -2,17 +2,17 @@
 #
 # https://gqlgen.com/getting-started/
 
-type JobListing{
-  _id:ID,
-  title:String!,
-  description:String!,
-  company:String!,
-  url:String!
+type JobListing {
+  _id: ID!
+  title: String!
+  description: String!
+  company: String!
+  url: String!
 }
 
-type Query{
-  jobs:[JobListing!]!
-  job(id:ID!):JobListing!
+type Query {
+  jobs: [JobListing!]!
+  job(id: ID!): JobListing!
 }
 
 type Mutation {
@@ -21,18 +21,19 @@ type Mutation {
   deleteJobListing(id: ID!): DeleteJobResponse!
 }
 
-input CreateJobListingInput{
-  title:String!,
-  description:String!,
-  company:String!,
-  url:String!
+input CreateJobListingInput {
+  title: String!
+  description: String!
+  company: String!
+  url: String!
 }
 
-input UpdateJobListingInput{
-  title:String,
-  description:String,
-  url:String!
+input UpdateJobListingInput {
+  title: String
+  description: String
+  url: String
 }
-input DeleteJobResponse{
-  deleteJobId:String!
+
+type DeleteJobResponse {
+  deletedJobId: String!
 }
