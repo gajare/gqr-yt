@@ -44,7 +44,8 @@ Follow the steps below to set up the project:
     $ go run github.com/99designs/gqlgen init
     ```
 
-7. *** removed content of files
+7. *** removed content of files.**
+
     a.  schema.resolvers.go
     b. models_gen.go
     c. update the schema.graphqls
