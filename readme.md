@@ -16,8 +16,10 @@ Follow the steps below to set up the project:
    ```
 
 2. **Initialize the Go module**
-    ``` $go mod init github.com/akhil/gql-yt
+    ``` 
+      $go mod init github.com/akhil/gql-yt
     ```
+
 
 3. **Install gqlgen**
     ```
@@ -32,7 +34,8 @@ Follow the steps below to set up the project:
     ```
 
 5. **Download dependencies**
-    ```go mod tidy
+    ```
+      go mod tidy
     ```
 
 6. **Initialize gqlgen**
@@ -41,11 +44,26 @@ Follow the steps below to set up the project:
     $ go run github.com/99designs/gqlgen init
     ```
 
-7. **After writing your GraphQL schema, generate the necessary files**
+7. *** removed content of files
+    a.  schema.resolvers.go
+    b. models_gen.go
+    c. update the schema.graphqls
+    d. add databse file and update it
+    e. update schema.resolver.go
+
+
+
+8. **After writing your GraphQL schema, generate the necessary files**
 
     ```
     go run github.com/99designs/gqlgen generate
     ```
+
+9. **Run server.go**
+  ```
+    $ go run main.go
+  ```
+  
 # 📌 GraphQL Operations
 
 ## 📍 Get All Jobs
