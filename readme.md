@@ -46,19 +46,30 @@ Follow the steps below to set up the project:
     $ go run github.com/99designs/gqlgen init
     ```
 
-7. *** removed content of files.**
+7. **🔧 File Updates and Changes**
+The following files have been modified or updated as part of this step:
 
-    a.  schema.resolvers.go
-    b. models_gen.go
-    c. update the schema.graphqls
-    d. add databse file and update it
-    e. update schema.resolver.go
+✅ Removed or regenerated content:
+
+schema.resolvers.go
+
+models_gen.go
+
+✅ Updated or newly added:
+```
+schema.graphqls – Updated with new types/queries/mutations.
+
+Database file – Added and updated with required schema or seed data.
+
+schema.resolvers.go – Updated with actual resolver logic.
+```
 
 
 
 8. **After writing your GraphQL schema, generate the necessary files**
 
     ```
+    go mod tidy
     go run github.com/99designs/gqlgen generate
     ```
 
