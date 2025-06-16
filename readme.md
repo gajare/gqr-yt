@@ -17,8 +17,10 @@ Follow the steps below to set up the project:
 
 2. **Initialize the Go module**
     ``` 
+      
       $go mod init github.com/akhil/gql-yt
     ```
+
 
 
 3. **Install gqlgen**
@@ -34,6 +36,8 @@ Follow the steps below to set up the project:
     ```
 
 5. **Download dependencies**
+    ```
+      go mod tidy
     ```
       go mod tidy
     ```
@@ -59,6 +63,12 @@ Follow the steps below to set up the project:
     ```
     go run github.com/99designs/gqlgen generate
     ```
+
+9. **Run server.go**
+  ```
+    $ go run server.go
+  ```
+  
 
 9. **Run server.go**
   ```
