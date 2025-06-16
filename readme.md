@@ -39,8 +39,6 @@ Follow the steps below to set up the project:
     ```
       go mod tidy
     ```
-      go mod tidy
-    ```
 
 6. **Initialize gqlgen**
 
@@ -69,11 +67,6 @@ Follow the steps below to set up the project:
     $ go run server.go
   ```
   
-
-9. **Run server.go**
-  ```
-    $ go run main.go
-  ```
   
 # 📌 GraphQL Operations
 
